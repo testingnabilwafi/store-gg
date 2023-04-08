@@ -1,0 +1,10 @@
+<% if (alert.alertMessage != "") { %>
+  <% alert.alertMessage.forEach(err => { %>
+    <div class="alert alert-delete alert-<%= alert.alertStatus %> alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+        &times;
+      </button>
+      <%= err %>
+    </div>
+  <% }) %>
+<% } %>

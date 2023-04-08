@@ -1,0 +1,75 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href="/dashboard" class="brand-link">
+    <img
+      src="/adminlte/dist/img/AdminLTELogo.png"
+      alt="AdminLTE Logo"
+      class="brand-image img-circle elevation-3"
+      style="opacity: 0.8"
+    />
+    <span class="brand-text font-weight-light">AdminLTE 3</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false"
+      >
+        <!-- Add icons to the links using the .nav-icon class
+        with font-awesome or any other icon font library -->
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link <%= page === 'dashboard' && 'active' %>">
+            <i class="nav-icon fas fa-home"></i>
+            <p>Beranda</p>
+          </a>
+        </li>
+        <li class="nav-header">Master</li>
+        <li class="nav-item">
+          <a href="/dashboard/categories" class="nav-link <%= page === 'categories' && 'active' %>">
+            <i class="nav-icon far fa-calendar-alt"></i>
+            <p>Categories</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard/nominals" class="nav-link <%= page === 'nominals' && 'active' %>">
+            <i class="nav-icon fas fa-tasks"></i>
+            <p>Nominal</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard/vouchers" class="nav-link <%= page === 'vouchers' && 'active' %>">
+            <i class="nav-icon fas fa-percent"></i>
+            <p>Voucher</p>
+          </a>
+        </li>
+        <li class="nav-header">Metode Pembayaran</li>
+        <li class="nav-item">
+          <a href="/dashboard/banks" class="nav-link <%= page === 'banks' && 'active' %>">
+            <i class="nav-icon fas fa-piggy-bank"></i>
+            <p>Bank</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard/payments" class="nav-link <%= page === 'payments' && 'active' %>">
+            <i class="nav-icon fas fa-money-check-alt"></i>
+            <p>Jenis Pembayaran</p>
+          </a>
+        </li>
+        <li class="nav-header">Transaksi</li>
+        <li class="nav-item">
+          <a href="/dashboard/transactions" class="nav-link <%= page === 'transactions' && 'active' %>">
+            <i class="fas fa-shopping-cart nav-icon"></i>
+            <p>Transaksi</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
